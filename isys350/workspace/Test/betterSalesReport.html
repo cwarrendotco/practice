@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sales Report Application</title>
+        <script type="text/javascript">
+
+var northEast = [25000, 28000, 17000, 8000],
+    northWest = [36000, 35000, 28000, 52000],
+    southEast = [18000, 25000, 32000, 50000],
+    southWest = [29000, 33000, 31000, 23000],
+    midWest = [38000, 25000, 17000, 19000],
+    quarterSales = [],
+    quarter = 0;
+for(var i = 0; i < northEast.length; i++) {
+    quarterSales[i] = 
+        northEast[i] +
+        northWest[i] + 
+        southEast[i] + 
+        southWest[i] + 
+        midWest[i];
+    quarter = quarter + 1;
+    document.write("Quarter " + quarter,
+    " Sales: $" + quarterSales[i].toFixed(2), "<br>");
+}
+var highestQuarterlySales = 0,
+    highestQuarter = 0;
+for(var i = 0; i < quarterSales.length; i++) {
+    if(highestQuarterlySales < quarterSales[i]) {
+        highestQuarterlySales = quarterSales[i];
+        highestQuarter = i + 1;
+    }
+}
+document.write("The highest quarterly sales is: $" + highestQuarterlySales,
+    " in quarter " + highestQuarter, "<br>");
+
+
+
+var arrayArray = [
+        northEast,
+        northWest,
+        southEast,
+        southWest,
+        midWest],
+    arrayNames = [
+        "North East",
+        "North West",
+        "South East",
+        "South West",
+        "Mid West"],
+    regionSales = 0,
+    regionName = 0;
+for(var i = 0; i < arrayArray.length; i++) {
+    regionSales = arrayArray[i];
+    regionName = arrayNames[i];
+}
+
+
+/*
+
+make array to hold all arrays
+make array of array names
+make loop that iterates equal times to length of master array
+variable in loop that progresses through array, setting itself equal to each
+array element as loop iterates
+gets sum of that variable
+prints array name (masterarray[i]) and total (getsum[i])
+
+*/
+
+
+var highestRegionSale = 0,
+    highestRegion = "";
+for(var i = 0; i < regionSales.length; i++) {
+    if(highestRegionSale < regionSales[i]) {
+        highestRegionSale = regionSales[i];
+        highestRegion = regions[i];
+    }
+
+}
+document.write("The highest region sales is: $" + highestRegionSale,
+    " in the " + highestRegion + " region.", "<br>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+
+
+

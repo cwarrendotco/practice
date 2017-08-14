@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Conversion Program</title>
+        <script type="text/javascript">
+
+var weightInput = parseFloat(
+    prompt("Please enter your bodyweight in pounds", "0")),
+    heightInput = parseFloat(
+    prompt("Please enter your height in inches", "0")),
+    ageInput = parseFloat(
+    prompt("Please enter your age in years", "0")),
+    bMR = 655 + (4.3 * weightInput) + 
+        (4.7 * heightInput) - 
+        (4.7 * ageInput);
+document.write("----------------------------", "<br>",
+    "Your Weight: ", weightInput, "<br/>",
+    "Your Height: ", heightInput, "<br/>",
+    "Your Age: ", ageInput, "<br/>",
+    "Your BMR: ", bMR.toFixed(2), "<br/>",
+    "----------------------------"
+);
+
+        </script>
+    </head>
+</html>

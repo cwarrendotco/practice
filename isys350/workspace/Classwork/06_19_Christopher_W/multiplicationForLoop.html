@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication Without Operator</title>
+        <script type="text/javascript">
+
+var entryOne = parseFloat(prompt("Enter the first number.")),
+    entryTwo = parseFloat(prompt("Enter the second number.")),
+    total = parseFloat(0);
+for (var numCount = 1; numCount <= entryTwo; numCount = numCount + 1) {
+    if (isNaN(entryOne)
+        || isNaN(entryTwo)) {
+            alert("Please only enter numbers.");
+        }
+        else {
+            total = total + entryOne;
+        }
+}
+
+document.write(total);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

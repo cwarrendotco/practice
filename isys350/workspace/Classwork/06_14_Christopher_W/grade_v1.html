@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assign Letter Grade based on Exam Score</title>
+        <script type="text/javascript">
+        
+var $ = function(id) {
+    return document.getElementById(id);
+};        
+// creates anonymous function to make calling getElementById() easier
+
+var assignGrade = function() {
+    var scoreInput = $("score").value,
+        score = parseFloat(scoreInput);
+    var grade = "";
+    if (isNaN(score)) {
+        grade = "Invalid Input";
+    }
+        else if(score > 100
+        || score < 0) {
+        grade = "Invalid Input";
+    }
+        else if (score >= 89) {
+            grade = "A";
+    }
+        else if (score >= 79) {
+            grade = "B";
+        }
+        else if (score >= 69) {
+            grade = "C";
+        }
+        else if (score >= 59) {
+            grade = "D";
+        }
+        else {
+            grade = "F";
+        }
+        $("grade").value = grade;
+};
+
+    window.onload = function() {
+        $("assign").onclick = assignGrade;
+        $("score").focus();
+};
+
+        </script>
+    </head>
+    <body>
+        <h1>Calculate Grade</h1>
+            <label for = "score">Enter Your Score: </label>
+            <input type="text" id="score"><br><br>
+            <label for = "grade">Grade: </label>
+            <input type = "text" id = "grade" disabled><br><br>
+            <label for>&nbsp</label>
+            <input type = "button" id = "assign" value = "Assign Letter Grade">
+    </body>
+</html>

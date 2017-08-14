@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Google Map with Marker</title>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+        <style type="text/css">
+
+#mymap {
+    width: 800px;
+    height: 800px;
+}
+
+        </style>
+        <script type="text/javascript">
+
+function create_map() {
+    var myDestination = {
+        center: new google.maps.LatLng(37.785562, -122.406065),
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("mymap"), myDestination),
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(37.785562, -122.406065),
+            map: map,
+            title: "SFSU Downtown Campus",
+            animation: google.maps.Animation.DROP
+    });
+    var infoWindow = new google.maps.InfoWindow(),
+        listener = google.maps.event.addListener(marker, "click", function() {
+            infoWindow.setContent("SFSU Downtown Campus !");
+            infoWindow.open(map, marker);
+    });
+    var myCoffeeShopLat = [37.782505,
+            37.786371,
+            37.784562,
+            37.783129,
+            37.787084],
+        myCoffeeShopLong = [-122.407615,
+            -122.404978,
+            -122.407315,
+            -122.406882,
+            -122.404055],
+        myCoffeeShopInfo = ["Blue Bottle Coffee Co.",
+            "The Coffee Bean & Tea Leaf",
+            "DAVIDsTEA",
+            "Cafe Venue",
+            "Cafe Dolci"],
+        myCoffeeShopMarker = [];
+    for(var i = 0; i < myCoffeeShopInfo.length; i++) {
+        myCoffeeShopMarker[i] = new google.maps.Marker( {
+            position: new google.maps.LatLng(myCoffeeShopLat[i],
+                myCoffeeShopLong[i]),
+            map: map,
+            title: myCoffeeShopInfo[i],
+            animation: google.maps.Animation.DROP
+        });
+        // doing listener like this makes it so only one box appears at a time
+        listener = google.maps.event.addListener(myCoffeeShopMarker[i],
+            "click", function() {
+                infoWindow.setContent(this.title);
+                infoWindow.open(map, this);
+        });
+    }
+}
+
+        </script>
+    </head>
+    <body onload="create_map()">
+        <div id="mymap"></div>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>San Francisco Gas Stations Map</title>
+        <script type="text/javascript" 
+            src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" 
+            src="https://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+
+$(document).ready(function() {
+    var myDestination = {
+        center: new google.maps.LatLng(37.7626985, -122.4346572),
+        zoom: 12,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+    map = new google.maps.Map($("#map_canvas").get(0), myDestination),
+        marker,
+        listener,
+        infoWindow = new google.maps.InfoWindow();
+    $.getJSON("gas_station.json", function(data) {
+        var lowestPrice = "",
+            highestPrice = "";
+        $.each(data, function() {
+            $.each(this, function(i, item) {
+                marker = new google.maps.Marker( {
+                    position: new google.maps.LatLng(
+                        item.LATITUDE, item.LONGITUDE),
+                    map: map,
+                    title: item.building,
+                    animation: google.maps.Animation.DROP
+                }); // ends marker
+                listener = google.maps.event.addListener(
+                    marker, "click", function() {
+                        infoWindow.setContent(this.title);
+                        infoWindow.open(map, this);
+                }); // ends listener
+                
+                
+                /* no idea how to actually write the code, but I'd set lowestPrice
+                 * equal to the first item.PRICE in product_list.json, then if it
+                 * was lower than the next item.PRICE in the array I would
+                 * continue to the next element, ELSE I'd set it equal to that element
+                 * and then continue until the end of the array. I'd do the same
+                 * for highestPrice. We never really covered comparing information
+                 * from a JSON file.
+                 
+                 for (var i = 0; i < PRICE.length; i++) {
+                     lowestPrice = PRICE[i]... yeah no idea here.
+                 }
+                 
+                 
+                 
+                 
+                 
+                 */
+            
+            }); // ends second each
+        }); // ends first each
+        
+        // totally cheater/useless method.
+            lowestPrice += "Brand Name: ARCO" + "<br>" + "<br>" +
+                        "Address: 5898 Mission St" + "<br>" + "<br>" +
+                        "Price: 3.4" + "<br>" + "<br>",
+            highestPrice += "Brand Name: CHEVRON" + "<br>" + "<br>" +
+                        "Address: 1298 Valencia St" + "<br>" + "<br>" +
+                        "Price: 4.5" + "<br>" + "<br>";
+        $("#lowestprice").html(lowestPrice); // injects lowest price
+        $("#highestprice").html(highestPrice); // injects highest price
+    }); // ends getJSON
+}); // ends document.ready
+
+        </script>
+    </head>
+    <body>
+        <h2>San Francisco Gas Stations Map</h2>
+        <div id="map_canvas" style="width: 600px; height: 500px;"></div>
+        <h3>The lowest Price Gas Station:</a></h3>
+        <div id="lowestprice"></div>
+        <h3>The Highest Price Gas Station:</h3>
+        <div id="highestprice"></div>
+    </body>
+</html>

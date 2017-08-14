@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Conversion Using For Loop</title>
+        <script type="text/javascript">
+
+var tempInput = parseFloat(
+        prompt("Enter the beginning temperature.")),
+    intervalTemp = parseFloat(
+        prompt("Enter the interval temperature.")),
+    times = parseFloat(
+        prompt("Enter how many times to convert.")),
+    cTemp = 0,
+    fTemp = tempInput;
+for (var count = 1; count <= times; count = count + 1) {
+    if (isNaN(tempInput)
+        || isNaN(intervalTemp)) {
+            alert("Please only enter numbers.");
+        }
+        else {
+            cTemp = (fTemp - 32) * 5 / 9;
+            document.write(fTemp.toFixed(2) + "   " + cTemp.toFixed(2) + "<br>");
+            fTemp = fTemp + intervalTemp;
+        }
+}
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

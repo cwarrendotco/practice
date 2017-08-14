@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Prompt Exercise</title>
+        <script type="text/javascript">
+        
+        //p = short for product//
+        
+            var pName = prompt(
+                    "Please enter the product name: ", "iPhone 8"),
+                pMfr = prompt(
+                    "Please enter the product manufacturer: ", "Apple"),
+                pURating = prompt(
+                    "Please enter the product user rating: ", 4.5),
+                pPrice = prompt(
+                    "Please enter the product price: ", 879.99),
+                pQty = prompt(
+                    "Please enter the product quantity: ", 3),
+                pTax = prompt(
+                    "Please enter the sales tax rate as a percent: ", 8.5),
+                
+                totalOne = pTax / 100 * pPrice + (pPrice * 1),
+                totalAll = totalOne * pQty;
+                
+            document.write(
+                "Product: ",pName,"<br/>",
+                "Manufacturer: ", pMfr, "<br/>",
+                "Rating: ", pURating, "<br/>",
+                "Price: $", pPrice, "<br/>",
+                "Quantity: ", pQty, "<br/>",
+                "Sales Tax Rate: ", pTax, "%", "<br/>",
+                "Total Payment For One: $", totalOne, "<br/>",
+                "Total Payment For All: $", totalAll
+                );
+                
+        </script>
+    </head>
+</html>

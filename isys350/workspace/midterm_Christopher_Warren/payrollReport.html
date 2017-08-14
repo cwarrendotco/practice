@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Print Payroll Report</title>
+        <script type="text/javascript">
+        
+var $ = function(id) {
+    return document.getElementById(id);
+};        
+var printReport = function() {
+    var fullName = $("name").value,
+        hoursWorked = parseFloat($("hours").value),
+        hoursRate = parseFloat($("rate").value),
+        fedWithHold = parseFloat($("federalwithholding").value) / 100,
+        stateWithHold = parseFloat($("statewithholding").value) / 100;
+    if (!isNaN(fullName)
+        || isNaN(hoursWorked)
+        || isNaN(hoursRate)
+        || isNaN(fedWithHold)
+        || isNaN(stateWithHold)) {
+            alert("Invalid inputs, use only letters for name or numbers for rest");
+        }
+        else {
+        var grossPay = hoursWorked * hoursRate,
+            withHeldFed = grossPay * fedWithHold,
+            withHeldState = grossPay * stateWithHold,
+            netPay = grossPay - withHeldFed - withHeldState;
+        document.write("Employee Name: " + fullName, "<br>",
+            "Hours Worked: " + hoursWorked, "<br>",
+            "Pay Rate: " + hoursRate, "<br>",
+            "Gross Pay: $" + grossPay.toFixed(2), "<br>",
+            "Federal Withholding: $" + withHeldFed.toFixed(2), "<br>",
+            "State Withholding: $" + withHeldState.toFixed(2), "<br>",
+            "Net Pay: $" + netPay.toFixed(2));
+            }
+    };
+window.onload = function() {
+    $("print").onclick = printReport;
+    $("name").focus();
+};
+
+        </script>
+    </head>
+    <body>
+        <h1>Print Payroll Report</h1>
+            <label for = "name">Employee Full Name: </label>
+            <input type="text" id="name"><br>
+            <label for = "hours">Number of Hours Worked: </label>
+            <input type = "text" id = "hours"><br>
+            <label for = "rate">Hourly Pay Rate: </label>  
+            <input type="text" id="rate"><br>
+            <label for = "federalwithholding">Federal Tax Withholding Rate (%): </label>  
+            <input type="text" id="federalwithholding"><br>
+            <label for = "statewithholding">State Tax Withholding Rate (%): </label>
+            <input type="text" id="statewithholding"><br>
+            <label for>&nbsp</label>
+            <input type = "button" id = "print" value = "Print Report">
+    </body>
+</html>

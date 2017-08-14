@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate Future Investment</title>
+        <script type="text/javascript">
+
+            //input: investment amount, yearly interest and number of years to invest
+            var investmentAmountInput = prompt("please enter the investment amount: ", 0),
+                investmentAmount = parseFloat(investmentAmountInput),
+                yearlyInterestRateInput = prompt("Please enter the investment rate here (eg. 4.5%)"),
+                yearlyInterestRate = parseFloat(yearlyInterestRateInput),
+                monthlyInterestRate = yearlyInterestRate / 12 / 100,
+                yearsInput = prompt("Please enter the number of years to invest: ", 0),
+                years = parseInt(yearsInput, 10),
+                
+                //process: calculate future investment based on investment amount, interest rate, years//
+                futureInvestment = investmentAmount * Math.pow(1 + monthlyInterestRate, years * 12),
+                futureInvestmentOutput = futureInvestment.toFixed(2);
+                
+                //Output:
+                document.write("The investment amount: ", investmentAmountInput, "<br/>",
+                    "The yearly interest rate: ", yearlyInterestRateInput, "%", "<br/>",
+                    "The number of years: ", yearsInput, "<br/>",
+                    "The future investment value is: $" + futureInvestmentOutput);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

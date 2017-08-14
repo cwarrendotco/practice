@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate Future Investment</title>
+        <script type="text/javascript">
+        
+function compoundInterestCalc(p, r, t) {
+    var a = p * Math.pow(1 + (r / 100 / 12), t * 12);
+        return a;
+}
+    /* function for calculating compound interest
+     * divide by 12 because interest is compounded monthly
+     * not needed for this program, just needed for assignment 
+     * could be done in the processInputs function easily */
+var evalInputs = function() {
+    var iPrincipal = document.getElementById("principal").value,
+        iRate = document.getElementById("interest").value,
+        iYears = document.getElementById("years").value;
+    // i prefix on variables is short for investment
+    if (!isNaN(iPrincipal)
+        && !isNaN(iRate)
+        && !isNaN(iYears)
+        && 0 < iPrincipal
+        && 0 < iRate
+        && 0 < iYears) {
+    // verifies inputs are #s and are > 0
+        var iFuture = compoundInterestCalc(iPrincipal, iRate, iYears);
+        document.getElementById("total").value = iFuture.toFixed(2);
+    }
+        else if (0 >= iPrincipal
+            || 0 >= iRate
+            || 0 >= iYears) {
+    // error message for values <= 0
+            alert("Please use values greater than 0.");
+        }
+        else {
+    // error message for non-numerical values
+            alert("Please input a numerical value.");
+        }
+};
+window.onload = function() {
+    document.getElementById("calculate").onclick = evalInputs,
+        ("principal").focus();
+};
+
+        </script>
+    </head>
+    <body>
+        <h1>Calculate Future Investment</h1>
+            <label for = "principal">Initial Investment: </label>
+            <input type="text" id="principal"><br><br>
+            <label for = "interest">Interest Rate: </label>
+            <input type="text" id="interest"><br><br>
+            <label for = "years">Years: </label>
+            <input type="text" id="years"><br><br>
+            <label for = "total">Total: </label>
+            <input type="text" id="total" disabled><br><br>
+            <input type="button" id="calculate" value="Calculate Investment">
+    </body>
+</html>

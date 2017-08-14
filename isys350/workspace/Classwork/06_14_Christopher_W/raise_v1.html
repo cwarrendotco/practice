@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calcualte New Salary Based on Rating</title>
+        <script type="text/javascript">
+        
+var $ = function(id) {
+    return document.getElementById(id);
+};        
+// creates anonymous function to make calling getElementById() easier
+var calculateSalary = function() {
+    var salaryInput = $("salary").value,
+        ratingInput = $("rating").value,
+        salary = parseFloat(salaryInput),
+        rating = parseFloat(ratingInput),
+        raise = 0;
+        
+    if (isNaN(salary, rating)
+        || rating > 3
+        || salary < 0) {
+        alert("Sorry, one or both entries are invalid. Please run it again.");
+    }
+    /* gives error if rating > 3 or < 0 or if inputs aren't #s
+     * doesn't work yet */
+        else if(rating == 0) {
+        raise = salary;
+        }
+        else if (rating == 3) {
+            raise = salary * 0.015;
+        }
+        else if (rating == 2) {
+            raise = salary * 0.04;
+        }
+        else if (rating == 1) {
+            raise = salary * 0.06;
+        }
+        else {
+            alert("Please only use whole numbers for rating.");
+        }
+        /* only situation in which final Else is reached
+         * should be non-whole number values for rating */
+        $("newsal").value = (raise + salary).toFixed(2);
+        $("raise").value = raise.toFixed(2);
+};
+window.onload = function() {
+    $("calc").onclick = calculateSalary;
+    $("salary").focus();
+};
+
+        </script>
+    </head>
+    <body>
+        <h1>Calculate New Salary Based on Rating</h1>
+            <label for = "salary">Enter Your Salary: </label>
+            <input type = "text" id = "salary"><br><br>
+            <label for = "rating">Enter Your Rating: </label>
+            <input type = "text" id = "rating"><br><br>
+            <label for = "raise">Raise: </label>
+            <input type = "text" id = "raise" disabled/><br><br>
+            <label for = "newsal">New Salary: </label>
+            <input type = "text" id = "newsal" disabled>
+            <label for>&nbsp</label><br><br>
+            <input type = "button" id = "calc" value = "Calculate Salary">
+    </body>
+</html>

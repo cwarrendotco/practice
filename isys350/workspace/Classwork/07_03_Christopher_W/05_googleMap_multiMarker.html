@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SFSU Building Map</title>
+        <script type="text/javascript" 
+            src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" 
+            src="https://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+
+$(document).ready(function() {
+    var myDestination = {
+        center: new google.maps.LatLng(37.723092, -122.478978),
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map($("#map_canvas").get(0), myDestination),
+        marker,
+        listener,
+        infoWindow = new google.maps.InfoWindow();
+    $.getJSON("sfsu_map.json", function(data) {
+        $.each(data, function() {
+            $.each(this, function(i, item) {
+                marker = new google.maps.Marker( {
+                    position: new google.maps.LatLng(
+                        item.latitude, item.longitude),
+                    map: map,
+                    title: item.building,
+                    animation: google.maps.Animation.DROP
+                }); // ends marker
+                listener = google.maps.event.addListener(
+                    marker, "click", function() {
+                        infoWindow.setContent(this.title);
+                        infoWindow.open(map, this);
+                }); // ends listener
+            }); // ends second each
+        }); // ends first each
+    }); // ends getJSON
+}); // ends document.ready
+
+        </script>
+    </head>
+    <body>
+        <h2>San Francisco State University Building Map</h2>
+        <div id="map_canvas" style="width: 800px; height: 800px;"></div>
+    </body>
+</html>

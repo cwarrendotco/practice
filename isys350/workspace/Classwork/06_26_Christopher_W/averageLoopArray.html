@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avg Array</title>
+        <script type="text/javascript">
+
+var numInput = 0,
+    scores = [];
+while (numInput != 999) {
+    numInput = parseFloat(prompt("Enter score from 0-100; 999 to exit"));
+    if (isNaN(numInput)
+        && numInput <= 0
+        && numInput >= 100
+        && numInput != 999) {
+            alert("Please only enter numbers between 0 and 100.");
+        }
+        else if (numInput >= 0
+            && numInput <= 100)
+                scores[scores.length] = numInput;
+        }
+var total = 0;
+for(var i = 0; i < scores.length; i++) {
+    total = total + scores[i];
+    // console logs go here,if you want
+}
+var avg = (total / scores.length).toFixed(2);
+document.write(avg, "<br>", scores);
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

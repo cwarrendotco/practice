@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shipping Calculator</title>
+        <script type="text/javascript">
+
+var total = parseFloat(
+    prompt("Please enter your purchase total", "0")),
+    shipping = 0;
+if (total > 100) {
+    shipping = 0;
+}
+    else if (total > 75) {
+    shipping = 1.95;
+    }
+    else if (total > 50) {
+    shipping = 4.95;
+    }
+    else if (total > 25) {
+        shipping = 7.95;
+    }
+    else if (total > 0) {
+        shipping = 9.95;
+    }
+document.write("----------------------------", "<br>",
+    "Your total payment: $", total, "<br/>",
+    "The shipping fee is: $", shipping, "<br/>",
+    "----------------------------"
+);
+
+        </script>
+    </head>
+</html>

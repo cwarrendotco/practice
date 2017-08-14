@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Join E-Mail List</title>
+        <script type="text/javascript">
+
+"use strict";
+var $ = function(id) {
+    return document.getElementById(id);
+};
+var joinList = function() {
+    // retrieve values from the input boxes
+    var emailAddy1 = $("email_address1"),
+        emailAddy2 = $("email_address2"),
+        firstName = $("first_name"),
+        isValid = true;
+    // validate first entry
+    if(emailAddy1.value == "") {
+        emailAddy1.nextElementSibling.firstChild.nodeValue
+            = "This field is required.";
+            // set isValid to false
+        isValid = false;
+    }
+    else {
+        emailAddy1.nextElementSibling.firstChild.nodeValue = "";
+    }
+    // validate second entry
+    if(emailAddy2.value == "") {
+        emailAddy2.nextElementSibling.firstChild.nodeValue
+            = "This field is required.";
+        isValid = false;
+    }
+    else if(emailAddy1.value != emailAddy2.value) {
+        emailAddy2.nextElementSibling.firstChild.nodeValue
+            = "This entry must equal first entry.";
+        isValid = false;
+    }    
+    else {
+        emailAddy2.nextElementSibling.firstChild.nodeValue = "";
+    } // validate third entry
+    if(firstName.value == "") {
+        firstName.nextElementSibling.firstChild.nodeValue
+            = "This field is required.";
+        isValid = false;
+    }
+    else {
+        firstName.nextElementSibling.firstChild.nodeValue = "";
+    }
+    if(isValid) {
+        $("email_form").submit();
+    }
+}; // end of joinList function
+
+window.onload = function() {
+    $("join_list").onclick = joinList;
+    $("email_address1").focus();
+};
+
+        </script>
+        <body>
+            <section>
+                <h1>Please Join Our E-Mail List</h1>
+                <form id="email_form" action="emailListJoin.html" method="get">
+
+                    <label for="email_address1">E-Mail Address:</label>
+                    <input type="text" id="email_address1" name="email_address1"/>
+                    <span id="email_address1_error">*</span><br>
+    
+                    <label for="email_address2">Re-Enter E-Mail Address:</label>
+                    <input type="text" id="email_address2" name="email_address2"/>
+                    <span id="email_address2_error">*</span><br>
+
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name"/>
+                    <span id="first_name_error">*</span><br><br>
+
+                    <input type="button" id="join_list" value="Join Our List"/>
+                </form>
+            </section>    
+        </body>
+    </head>
+</html>

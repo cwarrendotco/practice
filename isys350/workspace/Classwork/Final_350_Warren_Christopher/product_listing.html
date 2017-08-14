@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Retail Product Information</title>
+        <!-- JQuery Library Reference. latest is always referenced from jQuery's CDN -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript">
+
+$(document).ready(function () {
+    $.getJSON("product_listing.json", function(data) {
+        var html = "";
+        $.each(data, function() {
+            $.each(this, function(i, item) {
+                html += "Product Name: " + item.DESCRIPTION + "<br>" +
+                    "Product Size: " + item.SIZE + "<br>" +
+                    "Product UPC#: " + item.UPC + "<br>" +
+                    "Product Retail Price: " + item.RETAIL_PRICE + "<br>" +
+                    "Product Cost: " + item.COST + "<br>" + "<br>" + "<br>";
+            }); // ends the second loop
+        }); // ends the first loop
+        $("#product").html(html);
+    }); // ends getJSON function
+}); // ends document.ready
+
+</script>
+    </head>
+    <body>
+        <h2>Retail Product List:</h2>
+        <div id="product">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Future Investment Calculator</title>
+        <script type="text/javascript">
+        
+            var principal = prompt("Principal investment?", 0),
+                interestRate = prompt("Monthly interest rate? (eg. 4.5)", 0),
+                investmentYears = prompt("Duration of investment in years?", 0);
+                
+            if(!isNaN(principal) 
+                && !isNaN(interestRate)
+                && !isNaN(investmentYears)
+                && principal > 0
+                && interestRate > 0
+                && investmentYears > 0)
+                {
+            var x = principal * Math.pow(
+                    interestRate / 100 / 12 + 1, investmentYears * 12);
+            
+            document.write(
+                "Principal: $", principal,
+                "<br>Interest Rate: ", interestRate, "%",
+                "<br>Years of Investment: ", investmentYears,
+                "<br>Future Value: $", x.toFixed(2)
+                );
+                }
+                 else
+                {
+                    document.write("Invalid inputs, please try again.");
+                }
+        </script>
+    </head>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Map with GeoCoding</title>
+        <script type="text/javascript" 
+            src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false">
+        </script>
+        <script type="text/javascript">
+            
+var $ = function(id) {
+    return document.getElementById(id);
+};
+function getAddressLatLong() {
+    var geoCoder = new google.maps.Geocoder(),
+        address = $("markerAddress").value;
+        geoCoder.geocode({"address": address}, function(results, status) {
+            if(status == google.maps.GeocoderStatus.OK) {
+                /* results look like (42.3311427, -83.0457538)
+                 * next statement makes the results a String */
+                var input = String(results[0].geometry.location);
+                /* split above latlong into two values
+                 * because it gets returned as a parenthetical, so splitting
+                 * it turns them into numbers and cuts off parentheses and
+                 * denotes the comma as the separator, then puts values
+                 * into an array*/
+                var latLngStr = input.substring(1, input.length - 1).split(",");
+                /* assign the two values to the text field */
+                $("markerLatitude").value = parseFloat(latLngStr[0]);
+                $("markerLongitude").value = parseFloat(latLngStr[1]);
+                var myDestination = {
+                    center: new google.maps.LatLng(
+                        parseFloat(latLngStr[0]),parseFloat(latLngStr[1])),
+                    zoom: 15,
+                    mapTypeID: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map($("map_canvas"), myDestination),
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(
+                            parseFloat(latLngStr[0]),parseFloat(latLngStr[1])),
+                        map: map,
+                        title: address,
+                        animation: google.maps.Animation.DROP
+                });
+                var infoWindow = new google.maps.InfoWindow(),
+                    listener = google.maps.event.addListener(marker, "click",
+                        function() {
+                            infoWindow.setContent("SFSU Downtown Campus !");
+                            infoWindow.open(map, marker);
+                });
+            }
+            else {
+                console.log("Geocode was not succesful: " + status);
+            }
+        });
+}
+window.onload = function() {
+    $("geocode").onclick = getAddressLatLong;
+    $("markerAddress").focus();
+};
+
+        </script>
+    </head>
+    <body>
+        <label for="markerAddress">Address: </label>
+        <input type="text" id="markerAddress"/><br>
+        <label for="markerLatitude">Latitude: </label>
+        <input type="text" id="markerLatitude"/><br>
+        <label for="markerLongitude">Longitude: </label>
+        <input type="text" id="markerLongitude"/><br><br>
+        <label>&nbsp;</label>
+        <input type="button" id="geocode" value="Geocode This Address"/>
+        <div id="map_canvas" style="width: 800px; height: 800px;"></div>
+        
+    </body>
+</html>

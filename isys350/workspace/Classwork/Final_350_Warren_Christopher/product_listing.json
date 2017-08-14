@@ -1,0 +1,769 @@
+{
+    "ProductsCollection" : [
+      {
+        "ID":"SAP001",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Three Cheese ",
+        "SIZE":"5oz",
+        "UPC":1600039510,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP002",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Four Cheese mashed",
+        "SIZE":"7.2oz",
+        "UPC":1600024220,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP003",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Loaded Au Gratin",
+        "SIZE":"7.7oz",
+        "UPC":1600050520,
+        "COST":"$1.87",
+        "RETAIL_PRICE":"$2.12"
+      },
+      {
+        "ID":"SAP004",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Cheddar and Bacon",
+        "SIZE":"5.1oz",
+        "UPC":1600041550,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP005",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Roasted Garlic Mashed",
+        "SIZE":"7.2oz",
+        "UPC":1600033620,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP006",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Sour Cream and Chives Mashed",
+        "SIZE":"7.2oz",
+        "UPC":1600033610,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP007",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"HJ Creamy Scalloped",
+        "SIZE":"4.9oz",
+        "UPC":5150028059,
+        "COST":"$0.71",
+        "RETAIL_PRICE":"$0.96"
+      },
+      {
+        "ID":"SAP008",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Julienne",
+        "SIZE":"4.6oz",
+        "UPC":1600041820,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP009",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"HJ Cheesy Scalloped",
+        "SIZE":"4.9oz",
+        "UPC":5150028058,
+        "COST":"$0.71",
+        "RETAIL_PRICE":"$0.96"
+      },
+      {
+        "ID":"SAP010",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Au Gratin Value Size",
+        "SIZE":"8.1oz",
+        "UPC":1600040770,
+        "COST":"$1.93",
+        "RETAIL_PRICE":"$2.18"
+      },
+      {
+        "ID":"SAP011",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Au Gratin ",
+        "SIZE":"4.9oz",
+        "UPC":1600041750,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP012",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Sour Cream and Chives   ",
+        "SIZE":"4.8oz",
+        "UPC":1600041830,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP013",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Sweet Potato Mashed",
+        "SIZE":"6.3oz",
+        "UPC":1600015627,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP014",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Seasoned Skillets Hash Brown",
+        "SIZE":"5.2oz",
+        "UPC":1600041880,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP015",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Scalloped ",
+        "SIZE":"4.9oz",
+        "UPC":1600041850,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP016",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Seasoned Skillets Traditional Recipe",
+        "SIZE":"4.5oz",
+        "UPC":1600017723,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP017",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Cheesy Scalloped",
+        "SIZE":"5oz",
+        "UPC":1600040670,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP018",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"HJ Cheddar and Bacon",
+        "SIZE":"4.9oz",
+        "UPC":5150028062,
+        "COST":"$0.71",
+        "RETAIL_PRICE":"$0.96"
+      },
+      {
+        "ID":"SAP019",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Roasted Garlic and Cheddar Mash",
+        "SIZE":"7.2oz",
+        "UPC":1600050230,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP020",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Butter and Herb Mashed",
+        "SIZE":"7.2oz",
+        "UPC":1600033600,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP021",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Yukon Gold Mashed",
+        "SIZE":"4.8oz",
+        "UPC":1600015626,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP022",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Creamy Homestyle Butter",
+        "SIZE":"7.2oz",
+        "UPC":1600044970,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP023",
+        "CATEGORY":"Box Potatoes",
+        "DESCRIPTION":"BC Seasoned Skillets Roasted Garlic and Herb",
+        "SIZE":"4.5oz",
+        "UPC":1600017722,
+        "COST":"$1.41",
+        "RETAIL_PRICE":"$1.66"
+      },
+      {
+        "ID":"SAP024",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Tabasco Original",
+        "SIZE":"5 oz",
+        "UPC":1121000015,
+        "COST":"$2.43",
+        "RETAIL_PRICE":"$2.68"
+      },
+      {
+        "ID":"SAP025",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Frank's RedHot Original",
+        "SIZE":"12oz",
+        "UPC":4150080502,
+        "COST":"$1.53",
+        "RETAIL_PRICE":"$1.78"
+      },
+      {
+        "ID":"SAP026",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Tiger Sauce",
+        "SIZE":"5oz",
+        "UPC":7507610001,
+        "COST":"$1.37",
+        "RETAIL_PRICE":"$1.62"
+      },
+      {
+        "ID":"SAP028",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Tabasco Jalapeno",
+        "SIZE":"2oz",
+        "UPC":1121000971,
+        "COST":"$0.73",
+        "RETAIL_PRICE":"$0.98"
+      },
+      {
+        "ID":"SAP029",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Frank's RedHot Original smaller size",
+        "SIZE":"5oz",
+        "UPC":4150080501,
+        "COST":"$0.67",
+        "RETAIL_PRICE":"$0.92"
+      },
+      {
+        "ID":"SAP031",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Ott's Original Wing Sauce",
+        "SIZE":"17oz",
+        "UPC":4142301485,
+        "COST":"$2.35",
+        "RETAIL_PRICE":"$2.60"
+      },
+      {
+        "ID":"SAP032",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Louisiana Hot Sauce smaller size",
+        "SIZE":"6oz",
+        "UPC":1760002147,
+        "COST":"$0.27",
+        "RETAIL_PRICE":"$0.52"
+      },
+      {
+        "ID":"SAP033",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Louisiana Hot Sauce ",
+        "SIZE":"12oz",
+        "UPC":1760002177,
+        "COST":"$0.75",
+        "RETAIL_PRICE":"$1.00"
+      },
+      {
+        "ID":"SAP034",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Louisiana Wing Sauce",
+        "SIZE":"12oz",
+        "UPC":1760002150,
+        "COST":"$1.22",
+        "RETAIL_PRICE":"$1.47"
+      },
+      {
+        "ID":"SAP035",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Yucatan Habanero Pepper Sauce",
+        "SIZE":"5oz",
+        "UPC":7507610021,
+        "COST":"$1.33",
+        "RETAIL_PRICE":"$1.58"
+      },
+      {
+        "ID":"SAP036",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Tabasco Original smaller size",
+        "SIZE":"2oz",
+        "UPC":1121000001,
+        "COST":"$0.73",
+        "RETAIL_PRICE":"$0.98"
+      },
+      {
+        "ID":"SAP037",
+        "CATEGORY":"hot sauce",
+        "DESCRIPTION":"Frank's RedHot Wings",
+        "SIZE":"12oz",
+        "UPC":4150074510,
+        "COST":"$2.07",
+        "RETAIL_PRICE":"$2.32"
+      },
+      {
+        "ID":"SAP038",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Heinz Spicy Brown Mustard",
+        "SIZE":"17.5oz",
+        "UPC":1300000646,
+        "COST":"$1.11",
+        "RETAIL_PRICE":"$1.36"
+      },
+      {
+        "ID":"SAP039",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"French's Classic Yellow smaller size",
+        "SIZE":"8oz",
+        "UPC":4150000700,
+        "COST":"$0.75",
+        "RETAIL_PRICE":"$1.00"
+      },
+      {
+        "ID":"SAP040",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Griffin's ",
+        "SIZE":"20oz",
+        "UPC":7125802189,
+        "COST":"$0.63",
+        "RETAIL_PRICE":"$0.88"
+      },
+      {
+        "ID":"SAP041",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"French's Classic Yellow  biggest size",
+        "SIZE":"20oz",
+        "UPC":4150000031,
+        "COST":"$1.39",
+        "RETAIL_PRICE":"$1.64"
+      },
+      {
+        "ID":"SAP042",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"French's Horseradish mustard",
+        "SIZE":"12oz",
+        "UPC":4150078410,
+        "COST":"$2.33",
+        "RETAIL_PRICE":"$2.58"
+      },
+      {
+        "ID":"SAP043",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"French's Honey Mustard",
+        "SIZE":"120z",
+        "UPC":4150000052,
+        "COST":"$1.72",
+        "RETAIL_PRICE":"$1.97"
+      },
+      {
+        "ID":"SAP044",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Gulden's Spicy Brown Mustard",
+        "SIZE":"12oz",
+        "UPC":6414432160,
+        "COST":"$1.33",
+        "RETAIL_PRICE":"$1.58"
+      },
+      {
+        "ID":"SAP045",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Grey Poupon Country Dijon",
+        "SIZE":"8oz",
+        "UPC":5440000040,
+        "COST":"$2.33",
+        "RETAIL_PRICE":"$2.58"
+      },
+      {
+        "ID":"SAP046",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Inglehoffer Original Stone Ground",
+        "SIZE":"10oz",
+        "UPC":7182801102,
+        "COST":"$2.19",
+        "RETAIL_PRICE":"$2.44"
+      },
+      {
+        "ID":"SAP047",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Grey Poupon Mild and Creamy",
+        "SIZE":"10oz",
+        "UPC":5440001524,
+        "COST":"$2.53",
+        "RETAIL_PRICE":"$2.78"
+      },
+      {
+        "ID":"SAP048",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Jack Daniel's Honey Dijon",
+        "SIZE":"9oz",
+        "UPC":7020050233,
+        "COST":"$1.47",
+        "RETAIL_PRICE":"$1.72"
+      },
+      {
+        "ID":"SAP049",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Zatarain's Creole Mustard",
+        "SIZE":"12oz",
+        "UPC":7142903025,
+        "COST":"$1.73",
+        "RETAIL_PRICE":"$1.98"
+      },
+      {
+        "ID":"SAP050",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Hellmann's Honey Mustard",
+        "SIZE":"10.75oz",
+        "UPC":4800126364,
+        "COST":"$1.93",
+        "RETAIL_PRICE":"$2.18"
+      },
+      {
+        "ID":"SAP051",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"French's Spicy Brown",
+        "SIZE":"12oz",
+        "UPC":4150000042,
+        "COST":"$0.91",
+        "RETAIL_PRICE":"$1.16"
+      },
+      {
+        "ID":"SAP052",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Jack Daniel's Horseradish mustard",
+        "SIZE":"9oz",
+        "UPC":7020050230,
+        "COST":"$1.47",
+        "RETAIL_PRICE":"$1.72"
+      },
+      {
+        "ID":"SAP053",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Grey Poupon Dijon squeeze",
+        "SIZE":"10oz",
+        "UPC":5440001503,
+        "COST":"$2.53",
+        "RETAIL_PRICE":"$2.78"
+      },
+      {
+        "ID":"SAP054",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"French's Classic Yellow middle size",
+        "SIZE":"14oz",
+        "UPC":4150000025,
+        "COST":"$0.91",
+        "RETAIL_PRICE":"$1.16"
+      },
+      {
+        "ID":"SAP055",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Grey Poupon Dijon glass",
+        "SIZE":"8oz",
+        "UPC":5440000024,
+        "COST":"$2.33",
+        "RETAIL_PRICE":"$2.58"
+      },
+      {
+        "ID":"SAP056",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Grey Poupon Deli Mustard squeeze",
+        "SIZE":"10oz",
+        "UPC":5440001504,
+        "COST":"$2.53",
+        "RETAIL_PRICE":"$2.78"
+      },
+      {
+        "ID":"SAP057",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Jack Daniel's mustard",
+        "SIZE":"9oz",
+        "UPC":7020050234,
+        "COST":"$1.47",
+        "RETAIL_PRICE":"$1.72"
+      },
+      {
+        "ID":"SAP058",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"Inglehoffer Honey Mustard",
+        "SIZE":"10.25oz",
+        "UPC":7182801101,
+        "COST":"$2.19",
+        "RETAIL_PRICE":"$2.44"
+      },
+      {
+        "ID":"SAP059",
+        "CATEGORY":"mustard",
+        "DESCRIPTION":"French's Honey Dijon",
+        "SIZE":"120z",
+        "UPC":4150000029,
+        "COST":"$2.33",
+        "RETAIL_PRICE":"$2.58"
+      },
+      {
+        "ID":"SAP060",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Kitchen Fresh Hands",
+        "SIZE":"7.5oz",
+        "UPC":7418226593,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP061",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Dial Complete Antibac Foam Fresh Pear",
+        "SIZE":"7.5oz",
+        "UPC":1878777432,
+        "COST":"$1.33",
+        "RETAIL_PRICE":"$1.58"
+      },
+      {
+        "ID":"SAP062",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Dial Complete Antibac Foam White Tea",
+        "SIZE":"7.5oz",
+        "UPC":1878776116,
+        "COST":"$1.33",
+        "RETAIL_PRICE":"$1.58"
+      },
+      {
+        "ID":"SAP063",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Dial Complete Antibac Foam Cool Plum",
+        "SIZE":"7.5oz",
+        "UPC":1878776404,
+        "COST":"$1.43",
+        "RETAIL_PRICE":"$1.68"
+      },
+      {
+        "ID":"SAP064",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Bodycology Coconut Lime",
+        "SIZE":"7.5oz",
+        "UPC":7421100485,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP065",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Shea Butter",
+        "SIZE":"7.5oz",
+        "UPC":7418226582,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP066",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Milk Protein and Honey",
+        "SIZE":"7.5oz",
+        "UPC":7418226865,
+        "COST":"$1.22",
+        "RETAIL_PRICE":"$1.47"
+      },
+      {
+        "ID":"SAP067",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Bodycology Clean Lemon",
+        "SIZE":"7.5oz",
+        "UPC":1878777765,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP068",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Dial Pomegranate and Tangerine",
+        "SIZE":"9.375oz",
+        "UPC":1700002523,
+        "COST":"$1.12",
+        "RETAIL_PRICE":"$1.37"
+      },
+      {
+        "ID":"SAP069",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Dial Gold",
+        "SIZE":"7.5oz",
+        "UPC":2420800219,
+        "COST":"$1.12",
+        "RETAIL_PRICE":"$1.37"
+      },
+      {
+        "ID":"SAP070",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Bodycology Sweet Petals",
+        "SIZE":"7.5oz",
+        "UPC":7421100484,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP071",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Black Raspberry and Vanilla",
+        "SIZE":"7.5oz",
+        "UPC":7418226860,
+        "COST":"$1.22",
+        "RETAIL_PRICE":"$1.47"
+      },
+      {
+        "ID":"SAP072",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Elements Antibac",
+        "SIZE":"7.5oz",
+        "UPC":7418229217,
+        "COST":"$1.22",
+        "RETAIL_PRICE":"$1.47"
+      },
+      {
+        "ID":"SAP073",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Ensembles Fresh Essence",
+        "SIZE":"7.5oz",
+        "UPC":7418226861,
+        "COST":"$5.72",
+        "RETAIL_PRICE":"$5.97"
+      },
+      {
+        "ID":"SAP074",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Bodycology Cucumber Melon",
+        "SIZE":"7.5oz",
+        "UPC":5474935438,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP075",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Ensembles Exotic Orchid",
+        "SIZE":"7.5oz",
+        "UPC":7418226862,
+        "COST":"$5.72",
+        "RETAIL_PRICE":"$5.97"
+      },
+      {
+        "ID":"SAP076",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Ensembles Fresh Essence refill",
+        "SIZE":"7.5oz",
+        "UPC":7418226864,
+        "COST":"$2.72",
+        "RETAIL_PRICE":"$2.97"
+      },
+      {
+        "ID":"SAP077",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Bodycology Brown Sugar Vanilla",
+        "SIZE":"7.5oz",
+        "UPC":7421100486,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP078",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Bodycology Midnight Garden",
+        "SIZE":"7.5oz",
+        "UPC":7421100492,
+        "COST":"$2.75",
+        "RETAIL_PRICE":"$3.00"
+      },
+      {
+        "ID":"SAP079",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Ensembles Exotic Orchid refill",
+        "SIZE":"7.5oz",
+        "UPC":7418007100,
+        "COST":"$2.72",
+        "RETAIL_PRICE":"$2.97"
+      },
+      {
+        "ID":"SAP080",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Bodycology Apple Orchard",
+        "SIZE":"7.5oz",
+        "UPC":7421100493,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP081",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Dial Yogurt Van Honey",
+        "SIZE":"9.375oz",
+        "UPC":1700007816,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP082",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Dial White Tea and Vit E",
+        "SIZE":"9.375oz",
+        "UPC":1700002660,
+        "COST":"$1.12",
+        "RETAIL_PRICE":"$1.37"
+      },
+      {
+        "ID":"SAP083",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Soothing Aloe Vera",
+        "SIZE":"7.5oz",
+        "UPC":7418229300,
+        "COST":"$0.72",
+        "RETAIL_PRICE":"$0.97"
+      },
+      {
+        "ID":"SAP084",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Bodycology Brown Sugar Vanilla Foam",
+        "SIZE":"7.5oz",
+        "UPC":7421100494,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP085",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"Dial Complete Antibac Foam",
+        "SIZE":"7.5oz",
+        "UPC":1700002725,
+        "COST":"$1.33",
+        "RETAIL_PRICE":"$1.58"
+      },
+      {
+        "ID":"SAP086",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Hand Soap",
+        "SIZE":"7.5oz",
+        "UPC":7418226581,
+        "COST":"$2.22",
+        "RETAIL_PRICE":"$2.47"
+      },
+      {
+        "ID":"SAP087",
+        "CATEGORY":"liquid hand soap",
+        "DESCRIPTION":"SS Lavender and Chamomile",
+        "SIZE":"7.5oz",
+        "UPC":7418226198,
+        "COST":"$1.22",
+        "RETAIL_PRICE":"$1.47"
+      }
+    ]
+}

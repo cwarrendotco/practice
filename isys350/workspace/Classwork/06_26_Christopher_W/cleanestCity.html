@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cleanest City Checker</title>
+        <script type="text/javascript">
+
+var $ = function(id) {
+    return document.getElementById(id);
+};
+var checkCleanestCity = function () {
+    var cleanestCities = [
+        "Portland",
+        "San Jose",
+        "Buffalo",
+        "Columbus",
+        "San Francisco"],
+        cityToCheck = $("cityname").value,
+        isCleanest = false;
+    for (var i = 0; i < cleanestCities.length; i++) {
+        if (cityToCheck == cleanestCities[i]) {
+            isCleanest = true;
+            }
+        }
+    if (isCleanest) {
+        alert("Your city is one of the five cleanest!");
+        }
+        else {
+            alert("Unfortunately, your city is not one of the 5 cleanest.");
+            }
+};
+
+window.onload = function() {
+    $("check").onclick = checkCleanestCity;
+    $("cityname").focus();
+};
+
+        </script>
+    </head>
+    <body>
+        <h1>Check if Your City is the Cleanest</h1>
+        <label for="cityname">Your City Name</label>
+        <input type="text" id="cityname"/><br>
+        <label>&nbsp;</label>
+        <input type="button" id="check" value="Check Your City"/>
+    </body>
+</html>

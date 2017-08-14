@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2017 Appathon Winner Checker</title>
+        <script type="text/javascript">
+
+var $ = function(id) {
+    return document.getElementById(id);
+};
+var checkWinningTeams = function() {
+    var winningTeams = [
+        "Batman Device Team",
+        "Peer to Peer Parking Team",
+        "Music Chord Team",
+        "Parkalot Team",
+        "Blood Pressure App Team",
+        "Walk Safe Team",
+        "Blood Pressure App Team"],
+        teamToCheck = $("teamname").value,
+        isWinner = false;
+    for(var i = 0; i < winningTeams.length; i++) {
+        if(teamToCheck == winningTeams[i]) {
+            isWinner = true;
+            }
+        }
+    if(isWinner) {
+        alert("Your team is one of the winner!");
+        }
+        else {
+            alert("Unfortunately, your team is not one of the winners.");
+        }
+};
+window.onload = function() {
+    $("check").onclick = checkWinningTeams;
+    $("teamname").focus();
+};
+
+        </script>
+    </head>
+    <body>
+        <h1>Check if Your Team is a Winner</h1>
+        <label for="teamname">Your Team Name</label>
+        <input type="text" id="teamname"/><br>
+        <label>&nbsp;</label>
+        <input type="button" id="check" value="Check Your Team"/>
+    </body>
+</html>
+
+
+
+
+
+

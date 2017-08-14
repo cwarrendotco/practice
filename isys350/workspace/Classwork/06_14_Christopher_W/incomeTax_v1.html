@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calcualte Tax Owed Based on Income</title>
+        <script type="text/javascript">
+        
+var $ = function(id) {
+    return document.getElementById(id);
+};        
+// creates anonymous function to make calling getElementById() easier
+
+var calculateTax = function() {
+    var incomeInput = $("income").value,
+        income = parseFloat(incomeInput),
+        tax = 0;
+    if (isNaN(income)) {
+        alert("Please only use numbers for income.");
+    }
+        else if(income < 0) {
+        alert("Please don't use negative values.");
+    }
+        else if (income >= 70000) {
+            tax = 0.06 * (income - 7000) + 230;
+    }
+        else if (income >= 5250) {
+            tax = 0.05 * (income - 5250) + 142.5;
+        }
+        else if (income >= 3750) {
+            tax = 0.04 * (income - 5250) + 82.5;
+        }
+        else if (income >= 2250) {
+            tax = 0.03 * (income - 5250) + 37.5;
+        }
+        else if (income >= 760)
+            tax = 0.02 * (income - 5250) + 7.5;
+        else {
+            tax = 0.01 * income;
+        }
+        $("tax").value = tax.toFixed(2);
+};
+
+    window.onload = function() {
+        $("calc").onclick = calculateTax;
+        $("income").focus();
+};
+
+        </script>
+    </head>
+    <body>
+        <h1>Calculate Owed Tax</h1>
+            <label for = "income">Enter Your Income: </label>
+            <input type="text" id="income"><br><br>
+            <label for = "tax">Tax Owed: </label>
+            <input type = "text" id = "tax" disabled><br><br>
+            <label for>&nbsp</label>
+            <input type = "button" id = "calc" value = "Calculate Tax">
+    </body>
+</html>

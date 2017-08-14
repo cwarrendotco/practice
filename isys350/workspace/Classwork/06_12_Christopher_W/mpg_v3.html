@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate MPG</title>
+        <script type="text/javascript">
+        
+                //input
+            
+                
+                
+                // use if/else statement to make sure user inputs are valid
+                
+            var processEntries = function(){
+                
+                var milesInput = document.getElementById("miles").value,
+                    gallonsInput = document.getElementById("gallons").value,
+                
+                    miles = parseFloat(milesInput),
+                    gallons = parseFloat(gallonsInput);
+                
+                if(!isNaN(miles) 
+                    && miles > 0 
+                    && !isNaN(gallons) 
+                    && gallons > 0)
+                
+                {
+                    var mpg = miles / gallons;
+                    document.getElementById("mpg").value = mpg.toFixed(2);
+                
+                }
+                else
+                {
+                    alert("Sorry, one or both entries are invalid. Please run it again.");
+                }
+                    
+                };
+                
+            window.onload = function(){
+                document.getElementById("calculate").onclick = processEntries;
+                document.getElementById("miles").focus();
+                
+            };
+                
+                
+        </script>
+    </head>
+    <body>
+        <main>
+            <h1>Calculate Miles per Gallon</h1>
+            <label for = "miles">Miles Driven: </label>
+            <input type="text" id="miles"><br><br>
+            <label for = "gallons">Gallons Used: </label>
+            <input type="text" id="gallons"><br><br>
+            <label for = "mpg">Miles Per Gallon: </label>
+            <input type="text" id="mpg" disabled><br><br>
+            <label>&nbsp;</label>
+            <input type="button" id="calculate" value="Calculate MPG">
+        </main>
+    </body>
+</html>

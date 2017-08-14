@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate Future Investment</title>
+        <script type="text/javascript">
+            /*
+                create a function named calculateFutureInvestment()
+                which takes investment amount, yearly interest rate and number of years as input
+                its output is the future investment value
+            */
+            
+            function calculateFutureInvestment(investment, interestRate, years)
+            {
+                var monthlyInterestRate = interestRate / 12 / 100,
+                    futureInvestment = investment * Math.pow(1 + monthlyInterestRate, years * 12);
+                    
+                    return futureInvestment;
+                
+            };
+            
+            //input: investment amount, yearly interest and number of years to invest
+            var investmentAmountInput = prompt("please enter the investment amount: ", 0),
+                investmentAmount = parseFloat(investmentAmountInput),
+                yearlyInterestRateInput = prompt("Please enter the investment rate here (eg. 4.5%)"),
+                yearlyInterestRate = parseFloat(yearlyInterestRateInput),
+                monthlyInterestRate = yearlyInterestRate / 12 / 100,
+                yearsInput = prompt("Please enter the number of years to invest: ", 0),
+                years = parseInt(yearsInput, 10);
+
+                //Check for 0 and NaN
+                if(!isNaN(investmentAmountInput) 
+                && !isNaN(yearlyInterestRate)
+                && !isNaN(yearsInput)
+                && investmentAmountInput > 0
+                && yearlyInterestRateInput > 0
+                && yearsInput > 0)
+                {
+                    
+                //Process
+                var futureInvestment = calculateFutureInvestment(investmentAmount, yearlyInterestRate, years),
+                    futureInvestmentOutput = futureInvestment.toFixed(2);
+                    
+                //Output
+                document.write("The investment amount: ", investmentAmountInput, "<br/>",
+                    "The yearly interest rate: ", yearlyInterestRateInput, "%", "<br/>",
+                    "The number of years: ", yearsInput, "<br/>",
+                    "The future investment value is: $" + futureInvestmentOutput);
+                }
+                else
+                {
+                    document.write("Invalid inputs, please try again.");
+                }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Price Calculator</title>
+        <script type="text/javascript">
+            var bookName = 'Hyperion',
+                bookPrice = 5.75,
+                salesTax = 0.085,
+                qtyBuy = prompt((bookName + " costs $" + bookPrice +
+                    ", how many would you like to purchase?"), 0);
+            //use parenthesis to put variables in a prompt//
+
+            document.write(
+                "Product: ", bookName, "<br/>",
+                "Price: $", bookPrice, "<br/>",
+                "Quantity: ", qtyBuy, "<br/>",
+                "Total: $", ((salesTax * bookPrice) + bookPrice) * qtyBuy
+                );
+        </script>
+    </head>
+</html>

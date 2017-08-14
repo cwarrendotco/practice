@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sales Report Application</title>
+        <script type="text/javascript">
+
+var northEast = [25000, 28000, 17000, 8000],
+    northWest = [36000, 35000, 28000, 52000],
+    southEast = [18000, 25000, 32000, 50000],
+    southWest = [29000, 33000, 31000, 23000],
+    midWest = [38000, 25000, 17000, 19000],
+    quarterSales = [],
+    quarter = 0;
+for(var i = 0; i < northEast.length; i++) {
+    quarterSales[i] = 
+        northEast[i] +
+        northWest[i] + 
+        southEast[i] + 
+        southWest[i] + 
+        midWest[i];
+    quarter = quarter + 1;
+    document.write("Quarter " + quarter,
+    " Sales: $" + quarterSales[i].toFixed(2), "<br>");
+}
+var highestQuarterlySales = 0,
+    highestQuarter = 0;
+for(var i = 0; i < quarterSales.length; i++) {
+    if(highestQuarterlySales < quarterSales[i]) {
+        highestQuarterlySales = quarterSales[i];
+        highestQuarter = i + 1;
+    }
+}
+document.write("The highest quarterly sales is: $" + highestQuarterlySales,
+    " in quarter " + highestQuarter, "<br>");
+var regions = ["NorthEast", "NorthWest", "SouthEast", "SouthWest", "MidWest"],
+    regionSales = [0, 0, 0, 0, 0];
+for(var r = 0; r < regions.length; r++) {
+    if(r == 0) {
+        for(var q = 0; q < quarterSales.length; q++) {
+            regionSales[0] = regionSales[0] + northEast[q];
+        }
+    }
+        else if(r == 1) {
+            for(var q = 0; q < quarterSales.length; q++) {
+                regionSales[1] = regionSales[1] + northWest[q];
+                }
+            }
+        else if(r == 2) {
+            for(var q = 0; q < quarterSales.length; q++) {
+                regionSales[2] = regionSales[2] + southEast[q];
+                }
+            }
+        else if(r == 3) {
+            for(var q = 0; q < quarterSales.length; q++) {
+                regionSales[3] = regionSales[3] + southWest[q];
+                }
+            }
+        else if(r == 4) {
+            for(var q = 0; q < quarterSales.length; q++) {
+                regionSales[4] = regionSales[4] + midWest[q];
+                }
+            }
+}
+var highestRegionSale = 0,
+    highestRegion = "";
+for(var i = 0; i < regionSales.length; i++) {
+    if(highestRegionSale < regionSales[i]) {
+        highestRegionSale = regionSales[i];
+        highestRegion = regions[i];
+    }
+
+}
+document.write("The highest region sales is: $" + highestRegionSale,
+    " in the " + highestRegion + " region.", "<br>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+
+
+

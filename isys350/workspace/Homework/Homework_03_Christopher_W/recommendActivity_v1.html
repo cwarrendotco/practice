@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calcualte New Salary Based on Rating</title>
+        <script type="text/javascript">
+
+var $ = function(id) {
+    return document.getElementById(id);
+};
+// creates anonymous function to make calling getElementById() easier
+var reccomendActivity = function() {
+    var tempInput = $("temp").value,
+        units = $("units").value,
+        activityRecommendation = 0;
+    if (isNaN(tempInput)) {
+            alert("Please enter only numbers.");
+        }
+        else if (units == 0) {
+            if (tempInput > 120
+            || tempInput < -30) {
+                alert("Extreme temperature detected, please stay inside!");
+            }
+            // checks for extreme weather
+            else if(tempInput >= 80) {
+            activityRecommendation = "Swimming";
+            }
+            else if (tempInput >= 60) {
+            activityRecommendation = "Tennis";
+            }
+            else if (tempInput >= 40) {
+            activityRecommendation = "Golf";
+            }
+            else {
+            activityRecommendation = "Skiing";
+            }
+        }
+        else if (units == 1) {
+            if (tempInput > 48.89
+            || tempInput < -34.44) {
+                alert("Extreme temperature detected, please stay inside!");
+            }
+            else if(tempInput >= 26.67) {
+            activityRecommendation = "Swimming";
+            }
+            else if (tempInput >= 15.56) {
+            activityRecommendation = "Tennis";
+            }
+            else if (tempInput >= 4.44) {
+            activityRecommendation = "Golf";
+            }
+            else {
+            activityRecommendation = "Skiing";
+            /* originally converted user input to F and then compared it
+             * to original F values. realized that was dumb and way more
+             * work than necessary so I just converted the temp conditions to
+             * C and based the comparison on the drop down. way easier. */
+            }
+        }
+        $("activity").value = activityRecommendation;
+};
+window.onload = function() {
+    $("calc").onclick = reccomendActivity;
+    $("temp").focus();
+};
+
+        </script>
+    </head>
+    <body>
+        <h1>Calculate New Salary Based on Rating</h1>
+            <label for="temp">Outside Temperature: </label>
+            <input type="text" id="temp"><br>
+            <select id="units">
+                <option value="0">Farhenheit</option>
+                <option value="1">Celsius</option>
+            </select><br>
+            <label for="activity">Recommended Activity: </label>
+            <input type="text" id="activity" disabled>
+            <label for>&nbsp</label><br>
+            <input type="button" id="calc" value="Recommend Activity">
+    </body>
+</html>
