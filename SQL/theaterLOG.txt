@@ -1,0 +1,141 @@
+SQL> start theaterCONSTRUCT.sql
+Table dropped.
+Table created.
+Table dropped.
+Table created.
+Table dropped.
+Table created.
+Table dropped.
+Table created.
+Table dropped.
+Table created.
+Table dropped.
+Table created.
+
+SQL> start theaterLOAD.sql
+1 row created.
+1 row created.
+1 row created.
+1 row created.
+1 row created.
+
+.
+.
+.
+1 row created.
+1 row created.
+1 row created.
+1 row created.
+1 row created.
+1 row created.
+1 row created.
+1 row created.
+
+SQL> start theaterQUERIES.sql
+
+EMPLOYEEPHON EMPLOYEEEMAIL
+------------ --------------------------------------------------
+952-988-1102 divanets1@usnews.com
+795-848-9669 tjonson4@hostgator.com
+840-343-4240 scordelet6@dagondesign.com
+880-297-6339 fschistla@barnesandnoble.com
+496-347-9018 rquerrardg@newsvine.com
+292-588-0078 wvearej@networksolutions.com
+258-623-2688 acarolank@seattletimes.com
+953-833-1603 wswithenbyo@wsj.com
+673-983-8912 fdrewettt@ucoz.ru
+
+9 rows selected.
+
+
+MOVIETITLE
+--------------------------------------------------------------------------------
+Hideaway
+
+
+EMPLOYEEID EMPLOYEEFNAME             EMPLOYEELNAME
+---------- ------------------------- -------------------------
+EMPLOYEEROLE              EMPLOYEEPHON EMPLOYEEPAY
+------------------------- ------------ -----------
+EMPLOYEEEMAIL
+--------------------------------------------------
+         9 Ingeborg                  Sleeford
+cleaning crew             411-616-8836          19
+isleeford8@rediff.com
+
+        14 Felix                     Lewsie
+cleaning crew             899-490-8916          19
+flewsied@mysql.com
+
+EMPLOYEEID EMPLOYEEFNAME             EMPLOYEELNAME
+---------- ------------------------- -------------------------
+EMPLOYEEROLE              EMPLOYEEPHON EMPLOYEEPAY
+------------------------- ------------ -----------
+EMPLOYEEEMAIL
+--------------------------------------------------
+
+        28 Melania                   Hassin
+cleaning crew             382-956-2380          19
+mhassinr@dagondesign.com
+
+
+
+MOVIETITLE
+--------------------------------------------------------------------------------
+I Hope They Serve Beer in Hell
+George Carlin: Life Is Worth Losing
+
+
+MOVIETITLE
+--------------------------------------------------------------------------------
+Method to the Madness of Jerry Lewis
+Richard III
+La Putain du roi
+Conspiracy, The
+Piano Teacher, The (La pianiste)
+Broadway Rhythm
+Liar's Dice
+Hollow Man
+Author! Author!
+Mahjong (Ma jiang)
+Hyenas (Hy??nes)
+
+MOVIETITLE
+--------------------------------------------------------------------------------
+See No Evil
+St. George Shoots the Dragon (Sveti Georgije ubiva azdahu)
+Just Wright
+Frankenstein's Army
+Fearless Hyena II (Long teng hu yue)
+Hideaway
+Club, The
+Maxed Out: Hard Times, Easy Credit and the Era of Predatory Lenders
+Chesty: A Tribute to a Legend
+Lost Found
+*batteries not included
+
+MOVIETITLE
+--------------------------------------------------------------------------------
+Book of Shadows: Blair Witch 2
+Consuming Spirits
+Double Happiness
+Vieraalla maalla
+Stone Left Unturned, A (Kovat miehet)
+Cirque du Soleil: Varekai
+
+28 rows selected.
+
+
+  TICKETID  SHOWINGID TICKETCOST TICKETDISCOUNT TICKETREWARDCARDNUM
+---------- ---------- ---------- -------------- -------------------
+         5         48          5              5
+        17         66          7              5
+        18         86          7              5
+        23         85          5              5          3.0372E+13
+        44         72          8              5          3.7462E+14
+        46         40          9              5
+        66         99          7              5          5.6022E+15
+        76         56          7              5          4.0416E+15
+        92         76          9              5          5.6022E+15
+
+9 rows selected.
